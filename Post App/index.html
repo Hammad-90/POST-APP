@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginPage" class="container">
+  <h2>Login</h2>
+  <input type="text" id="loginEmail" placeholder="Email : test@gmail.com">
+  <input type="password" id="loginPassword" placeholder="Password : 123456">
+  <button onclick="login()">Login</button>
+  <p>Don't have account? <a href="#" onclick="showSignup()">Signup</a></p>
+</div>
+
+<div id="signupPage" class="container hidden">
+  <h2>Signup</h2>
+  <input type="text" id="signupEmail" placeholder="Email : test@gmail.com">
+  <input type="password" id="signupPassword" placeholder="Password : 123456">
+  <button onclick="signup()">Signup</button>
+  <p>Already have account? <a href="#" onclick="showLogin()">Login</a></p>
+</div>
+
+
+<div id="dashboard" class="container hidden">
+  <h2>Post App</h2>
+
+  <input type="text" id="postInput" placeholder="Write something...">
+  <button onclick="addPost()">Add Post</button>
+
+  <div id="posts"></div>
+
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+  body {
+      font-family: Arial;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .container {
+      width: 320px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px;
+      width: 95%;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+
+    .post {
+      background: #eee;
+      margin: 10px 0;
+      padding: 10px;
+      text-align: left;
+      border-radius: 5px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://i.pinimg.com/originals/7c/83/af/7c83afe4915fc72564941ab32ff1e37d.gif');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  width: 340px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  color: white;
+  animation: fadeIn 0.5s ease;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ff7b00;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff5500;
+  transform: scale(1.03);
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.post {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  color: white;
+  animation: slideUp 0.3s ease;
+}
+
+.post p {
+  margin-bottom: 8px;
+}
+
+.post button {
+  width: auto;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-right: 5px;
+  background: #222;
+}
+
+.post button:hover {
+  background: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
